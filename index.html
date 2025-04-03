@@ -416,7 +416,7 @@
 
     // 4. Redirect to CPA offer after 2 seconds
 setTimeout(() => {
-    const redirectUrl = "https://verifyuser.org/cl/i/423484?" +
+    const redirectUrl = "https://verifyuser.org/cl/i/423484"? +
         "uid=" + encodeURIComponent(uid || '') +
         "&platform=" + encodeURIComponent(platform || '') +
         "&resource=" + encodeURIComponent(resource || '') +
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (urlParams.has('redirect')) {
         setTimeout(() => {
             console.log("Auto-redirecting to CPA offer"); // Debug output
-            window.location.href = "https://verifyuser.org/cl/i/423484";
+            window.location.href = "https://verifyuser.org/cl/i/423484"?;
         }, 3000);
     }
 });
